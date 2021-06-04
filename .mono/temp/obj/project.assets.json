@@ -1,0 +1,48 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.7.2": {}
+  },
+  "libraries": {},
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.7.2": []
+  },
+  "packageFolders": {
+    "/home/charles/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/home/charles/Godot_v3.3.2-stable_mono_x11_64/Projects/Mom Bullet Hell/Mom Bullet Hell.csproj",
+      "projectName": "Mom Bullet Hell",
+      "projectPath": "/home/charles/Godot_v3.3.2-stable_mono_x11_64/Projects/Mom Bullet Hell/Mom Bullet Hell.csproj",
+      "packagesPath": "/home/charles/.nuget/packages/",
+      "outputPath": "/home/charles/Godot_v3.3.2-stable_mono_x11_64/Projects/Mom Bullet Hell/.mono/temp/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/home/charles/.config/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net472"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net472": {
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net472": {
+        "runtimeIdentifierGraphPath": "/usr/lib/mono/msbuild/Current/bin/RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

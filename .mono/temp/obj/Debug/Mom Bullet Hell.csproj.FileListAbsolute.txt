@@ -1,0 +1,8 @@
+/home/charles/Godot_v3.3.2-stable_mono_x11_64/Projects/Mom Bullet Hell/.mono/temp/bin/Debug/Mom Bullet Hell.dll
+/home/charles/Godot_v3.3.2-stable_mono_x11_64/Projects/Mom Bullet Hell/.mono/temp/bin/Debug/Mom Bullet Hell.pdb
+/home/charles/Godot_v3.3.2-stable_mono_x11_64/Projects/Mom Bullet Hell/.mono/temp/obj/Debug/Mom Bullet Hell.csprojAssemblyReference.cache
+/home/charles/Godot_v3.3.2-stable_mono_x11_64/Projects/Mom Bullet Hell/.mono/temp/obj/Debug/Mom Bullet Hell.AssemblyInfoInputs.cache
+/home/charles/Godot_v3.3.2-stable_mono_x11_64/Projects/Mom Bullet Hell/.mono/temp/obj/Debug/Mom Bullet Hell.AssemblyInfo.cs
+/home/charles/Godot_v3.3.2-stable_mono_x11_64/Projects/Mom Bullet Hell/.mono/temp/obj/Debug/Mom Bullet Hell.csproj.CoreCompileInputs.cache
+/home/charles/Godot_v3.3.2-stable_mono_x11_64/Projects/Mom Bullet Hell/.mono/temp/obj/Debug/Mom Bullet Hell.dll
+/home/charles/Godot_v3.3.2-stable_mono_x11_64/Projects/Mom Bullet Hell/.mono/temp/obj/Debug/Mom Bullet Hell.pdb
