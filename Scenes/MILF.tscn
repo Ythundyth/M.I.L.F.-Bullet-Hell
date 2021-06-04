@@ -1,0 +1,112 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://Videos/MILF Hudless.webm" type="VideoStream" id=1]
+[ext_resource path="res://Sprites/Player.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/Mom.png" type="Texture" id=3]
+[ext_resource path="res://Scripts/Player.cs" type="Script" id=4]
+[ext_resource path="res://Scripts/Spawner.cs" type="Script" id=5]
+[ext_resource path="res://Scripts/Mom.cs" type="Script" id=6]
+[ext_resource path="res://Scripts/HitCounter.cs" type="Script" id=7]
+[ext_resource path="res://Fonts/Freshman.ttf" type="DynamicFontData" id=8]
+[ext_resource path="res://Scripts/HitCounterEnemy.cs" type="Script" id=9]
+[ext_resource path="res://Sprites/PlayerHitbox.png" type="Texture" id=10]
+[ext_resource path="res://Scripts/PlayerHitbox.cs" type="Script" id=11]
+
+[sub_resource type="Environment" id=1]
+background_mode = 4
+glow_bloom = 0.08
+glow_blend_mode = 1
+glow_bicubic_upscale = true
+
+[sub_resource type="DynamicFont" id=2]
+size = 60
+outline_size = 5
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 8 )
+
+[node name="MILF" type="Node2D"]
+
+[node name="VideoPlayer" type="VideoPlayer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 1920.0
+margin_bottom = 1080.0
+stream = ExtResource( 1 )
+autoplay = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+modulate = Color( 1, 1, 1, 0.576471 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 1920.0
+margin_bottom = 1080.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Line2D2" type="Line2D" parent="."]
+position = Vector2( 960, 0.0243807 )
+scale = Vector2( 1, 1.00242 )
+points = PoolVector2Array( 0, -0.054, 0, 1088.39 )
+width = 16.0
+default_color = Color( 0, 0, 0, 1 )
+antialiased = true
+
+[node name="Line2D" type="Line2D" parent="."]
+position = Vector2( 960, 0.0243807 )
+scale = Vector2( 1, 1.00242 )
+points = PoolVector2Array( 0, -0.054, 0, 1088.39 )
+width = 6.0
+default_color = Color( 1, 1, 1, 1 )
+antialiased = true
+
+[node name="Player" type="Sprite" parent="."]
+position = Vector2( 1440, 900 )
+texture = ExtResource( 2 )
+script = ExtResource( 4 )
+
+[node name="PlayerHitbox" type="Sprite" parent="."]
+scale = Vector2( 0.25, 0.25 )
+texture = ExtResource( 10 )
+script = ExtResource( 11 )
+
+[node name="Mom" type="Sprite" parent="."]
+position = Vector2( 480, 900 )
+texture = ExtResource( 3 )
+script = ExtResource( 6 )
+
+[node name="Spawner" type="Node2D" parent="." groups=[
+"Bullets",
+]]
+script = ExtResource( 5 )
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource( 1 )
+
+[node name="HitCounter" type="Label" parent="."]
+margin_left = 1550.0
+margin_top = 10.0
+margin_right = 1692.0
+margin_bottom = 71.0
+custom_fonts/font = SubResource( 2 )
+text = "Misses: 0"
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HitCounterEnemy" type="Label" parent="."]
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 152.0
+margin_bottom = 71.0
+custom_fonts/font = SubResource( 2 )
+text = "Misses: 0"
+script = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}

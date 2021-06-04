@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Sprites/Arrow Enemy.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/ArrowEnemy.cs" type="Script" id=2]
+
+[node name="ArrowEnemy" type="Sprite" groups=[
+"Bullets",
+]]
+scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 1 )
+script = ExtResource( 2 )

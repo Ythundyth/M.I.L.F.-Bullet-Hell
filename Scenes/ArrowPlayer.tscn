@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Sprites/Arrow Player.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/ArrowPlayer.cs" type="Script" id=2]
+
+[node name="ArrowPlayer" type="Sprite"]
+scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 1 )
+script = ExtResource( 2 )
